@@ -143,9 +143,9 @@ img {
   content: "";
   position: absolute;
   display: block;
-  top: 4px;
-  left: -10px;
-  width: 64px;
+  top: 5px;
+  left: -13px;
+  width: 60px;
   height: 24px;
   border-radius: 1rem;
   background-color: rgba(92, 23, 242, 0.36);
@@ -181,6 +181,11 @@ img {
   border: none;
   outline: none;
   background: rgba(92, 23, 242, 0.76);
+  transition: background 0.3s;
+  cursor: pointer;
+}
+.home__btn:hover {
+  background: rgb(92, 23, 242);
 }
 
 .about {
@@ -262,18 +267,20 @@ img {
 }
 .footer__data {
   text-align: center;
+  justify-content: center;
   color: rgb(255, 255, 255);
 }
 .footer__data h2 {
+  text-align: center;
   font-size: 35px;
 }
 .footer__social {
   display: flex;
   justify-content: center;
-  font-size: 24px;
+  font-size: 28px;
 }
 .footer__data a {
-  margin-left: 8px;
+  margin-left: 0.78rem;
   transition: transform 0.3s;
 }
 .footer__data a:hover {

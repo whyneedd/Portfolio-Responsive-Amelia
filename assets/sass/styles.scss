@@ -144,9 +144,9 @@ img {
     content: "";
     position: absolute;
     display: block;
-    top: 4px;
-    left: -10px;
-    width: 64px;
+    top: 5px;
+    left: -13px;
+    width: 60px;
     height: 24px;
     border-radius: 1rem;
     background-color: rgb(92, 23, 242, 0.36);
@@ -182,6 +182,11 @@ img {
         border: none;
         outline: none;
         background: rgb(92, 23, 242, 0.76);
+        transition: background 0.3s;
+        cursor: pointer;
+    }
+    &__btn:hover {
+        background: rgb(92, 23, 242);
     }
 }
 
@@ -263,18 +268,20 @@ img {
     }
     &__data {
         text-align: center;
+        justify-content: center;
         color: rgb(255, 255, 255);
     }
     &__data h2 {
+        text-align: center;
         font-size: 35px;
     }
     &__social {
         display: flex;
         justify-content: center;
-        font-size: 24px;
+        font-size: 28px;
     }
     &__data a {
-        margin-left: 8px;
+        margin-left: .78rem;
         transition: transform 0.3s;
     }
     &__data a:hover {
@@ -299,12 +306,12 @@ img {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: right .3s;
+        transition: right 0.3s;
         top: 0;
         right: -100%;
         width: 100%;
         height: 100vh;
-        background: rgb( 255, 255, 255, .76 );
+        background: rgb(255, 255, 255, 0.76);
         backdrop-filter: blur(7px);
         .nav__items {
             .nav__links {
@@ -381,7 +388,7 @@ img {
         height: 5px;
         border-radius: 1rem;
         background: rgb(0, 0, 0);
-        transition: transform 0.3s, opacity .3s;
+        transition: transform 0.3s, opacity 0.3s;
     }
 
     .nav__humbger.active::before {
@@ -391,7 +398,7 @@ img {
     .nav__humbger.active::after {
         transform: rotate(45deg) translate(-9px, -8px);
     }
-    
+
     .nav__humbger.active span {
         opacity: 0;
     }
