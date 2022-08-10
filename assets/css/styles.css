@@ -356,8 +356,17 @@ img {
     width: 100%;
   }
   .contact form {
+    position: relative;
     display: flex;
     flex-direction: column;
+  }
+  .contact input[type=email] {
+    border-radius: 0.75rem;
+  }
+  .contact input[type=submit] {
+    position: absolute;
+    top: 80px;
+    border-radius: 0.75rem;
   }
   .nav__humbger {
     position: absolute;

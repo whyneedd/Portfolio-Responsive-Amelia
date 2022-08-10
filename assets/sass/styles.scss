@@ -361,8 +361,18 @@ img {
     }
     .contact {
         form {
+            position: relative;
             display: flex;
             flex-direction: column;
+        }
+        input[type="email"] {
+            border-radius: .75rem;
+        }
+        
+        input[type="submit"] {
+            position: absolute;
+            top: 80px;
+            border-radius: .75rem;
         }
     }
 
